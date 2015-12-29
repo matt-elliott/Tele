@@ -29,6 +29,9 @@ Background Grey			:	#dad9d7
 	padding-left: 1em;
 	padding-right: 1em;
 }
+button, a {
+	border-radius: 0!important;
+}
 /* BOOTSTARP OVERRIDES [END] */
 
 /* COLORS [START] */
@@ -216,23 +219,34 @@ header {
 	padding: 0 2em;
 }
 header .cta {
-	padding: 0.5em;
-	max-width: 25%;
+	padding: 1.3em;
+	max-width: 38%;
 	font-size: 1em;
-	margin-right: 15%;
+	margin-right: 6.6%;
 	float: right;
 }
 header .cta h3, header .cta form {
 	display: inline-block;
-	max-width: 49%;
 	vertical-align: middle;
 }
 header .cta h3 {
-	font-size: 1.2em;
+	width: 30%;
+	font-size: 1em;
+	font-weight: 200;
+	margin: 0 5% 0 0;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+header .cta form {
+	width: 64%;
+	display: inline-flex;
+	flex-direction: row;
 }
 .cta input[type='text'] {
 	background: transparent;
 	color: #fff;
+	border: 2px solid #898b8e;
+	border-right: none 0;
 }
 .cta button[type='submit'] {
 	color: #000;
