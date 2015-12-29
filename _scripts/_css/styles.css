@@ -120,8 +120,12 @@ header {
 /* HEADER [END] */
 
 /* POST INDEX [START] */
+#posts {
+	border-top: 1px solid #babcbe;
+	border-bottom: 1px solid #babcbe;
+}
 #posts .post { 
-	margin-bottom: 2em
+	margin: 2em 0;
 }
 #posts .post .post-thumbnail {
 	position: relative;
@@ -157,9 +161,7 @@ header {
 #pagination {
 	margin: 0 auto 2em;
 	padding: 2em 0;
-	text-align: center;
-	border-top: 2px solid;
-	border-bottom: 2px solid;
+/*	text-align: center;*/
 }
 #pagination > *,
 #pagination ul.pages li {
@@ -181,20 +183,41 @@ header {
 	background-color: #4d4d4f;
 	color: #fff;
 }
+#pagination ul.pages li.counter {
+	background-color: transparent;
+	color: #000;
+	font-weight: bold;
+}
 /* PAGINATION [END] */
 
 /* SIDEBAR [START] */
 .sidebar {
 	position: relative;
+	border: 1px solid #000;
+	border-right: none 0;
 }
-.sidebar .select-cat::after {
+.select-cat {
+	margin: 1em 0 6em;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+#pagination .select-cat {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 11em;
+}
+.select-cat::after {
 	content: "\e250";
+	font-family: 'Glyphicons Halflings';
+	margin-left: 0.5em;
+	vertical-align: baseline;
 }
 .sidebar article {
 	margin-bottom: 2em;
 }
 .sidebar article figure img {
-	margin: 0.5em auto;
+/*	margin: 0.5em auto;*/
+	margin: 0 0 0.5em;
 }
 .sidebar article figcaption a {
 	color: #000;
@@ -220,7 +243,7 @@ header {
 }
 header .cta {
 	padding: 1.3em;
-	max-width: 38%;
+	max-width: 50%;
 	font-size: 1em;
 	margin-right: 6.6%;
 	float: right;
@@ -318,8 +341,9 @@ header .cta form {
 
 /* POLICY NAV [START] */
 #policy-nav {
-	background-color: #000;
+	background-color: #31322e;
 	font-size: 0.8em;
+	padding: 3em 0.4em;
 }
 #policy-nav span, #policy-nav ul, #policy-nav li {
 	display: inline-block;
@@ -331,6 +355,9 @@ header .cta form {
 #policy-nav li:last-of-type::after {
 	content: '';
 	margin: 0;
+}
+#policy-nav .number {
+	margin-left: 10em;
 }
 /* POLICY NAV [END] */
 
@@ -419,6 +446,11 @@ footer h4 {
 	#posts .post#latest-post .post-thumbnail {
 		margin: 0 -1em;
 	}
+	#pagination {
+		text-align: center;
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -447,6 +479,9 @@ footer h4 {
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
 		transform: translate(-50%,-50%);
+	}
+	#policy-nav {
+		margin: 0 -1.3em;
 	}
 }
 /* RESPONSIVE [END] */
