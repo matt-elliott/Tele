@@ -32,6 +32,15 @@ Background Grey			:	#dad9d7
 button, a {
 	border-radius: 0!important;
 }
+.breadcrumb {
+	background: transparent;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.breadcrumb>li+li:before {
+	content:  ":";
+	padding: 0 5px 0 2px;
+}
 /* BOOTSTARP OVERRIDES [END] */
 
 /* COLORS [START] */
@@ -235,22 +244,22 @@ header#site-header {
 /* SIDEBAR [END] */
 
 /* CTA [START] */
-.cta {
+header#site-header.cta {
 	color: #fff;
 	padding: 0 2em;
 }
-header .cta {
+header#site-header .cta {
 	padding: 1.3em;
 	max-width: 50%;
 	font-size: 1em;
 	margin-right: 6.6%;
 	float: right;
 }
-header .cta h3, header .cta form {
+header#site-header .cta h3, header#site-header .cta form {
 	display: inline-block;
 	vertical-align: middle;
 }
-header .cta h3 {
+header#site-header .cta h3 {
 	width: 30%;
 	font-size: 1em;
 	font-weight: 200;
@@ -258,18 +267,18 @@ header .cta h3 {
 	text-transform: uppercase;
 	line-height: 1.4;
 }
-header .cta form {
+header#site-header .cta form {
 	width: 64%;
 	display: inline-flex;
 	flex-direction: row;
 }
-.cta input[type='text'] {
+header#site-header .cta input[type='text'] {
 	background: transparent;
 	color: #fff;
 	border: 2px solid #898b8e;
 	border-right: none 0;
 }
-.cta button[type='submit'] {
+header#site-header .cta button[type='submit'] {
 	color: #000;
 }
 .download {
@@ -360,6 +369,68 @@ header .cta form {
 }
 /* POLICY NAV [END] */
 
+/* ARTICLE PAGE [START] */
+#articles article {
+	margin-bottom: 3em;
+}
+#articles header .breadcrumb li,
+#articles header .breadcrumb a {
+	text-transform: uppercase;
+}
+#articles header .title {
+	margin-top: 0;
+}
+#articles footer div {
+	margin: 2em 0;
+}
+#articles footer #author {
+	padding-top: 2em;
+	border-top: 0.5em solid #4d4d4f;
+}
+#articles footer #author figure {
+	padding: 0;
+}
+#articles footer #author .name,
+#articles footer #author p {
+	display: inline;
+	vertical-align: baseline;
+	font-size: 1em;
+}
+#articles footer #article-comments header {
+	color: #000;	
+	padding: 1em 0;
+	border-top: 0.5em solid #4d4d4f;
+}
+#articles footer #article-comments header h5 {
+	margin: 0;
+}
+#articles footer #article-comments header h5,
+#articles footer #article-comments header > span {
+	vertical-align: middle;
+}
+#articles footer #article-comments footer,
+#articles footer #article-comments textarea {
+	width: 100%;
+	border: 2px solid #dad9d7;
+	border-collapse: collapse;
+}
+#articles footer #article-comments textarea {
+	margin: 0;
+	padding: 0;
+	display: block;
+	min-height: 200px;
+}
+#articles footer #article-comments footer {
+	padding: 0.5em;
+}
+/* ARTICLE PAGE [END] */
+
+/* BACK TO TOP [START] */
+#back-to-top {
+	margin: 0 0 4em;
+}
+/* BACK TO TOP [END] */
+
 /* FOOTER [START] */
 footer {
 	position: relative;
@@ -369,7 +440,7 @@ footer .flex-wrapper {
 	display: flex;
 	flex-direction: column;
 }
-footer::before {
+footer#page-footer::before {
 	content: ' ';
 	position: absolute;
 	display: inline-block;
@@ -386,7 +457,7 @@ footer::before {
 	transform: translateX(-50%);
 }
 
-footer, footer nav a {
+footer#page-footer, footer nav a {
 	color: #fff;
 }
 
@@ -427,7 +498,8 @@ footer #links a {
 		float: right;
 		margin-right: 1em;
 	}
-	footer::before {
+	
+	footer#page-footer::before {
 		border-top-color: #fff;
 	}
 }
@@ -457,7 +529,7 @@ footer #links a {
 	.arrow.light::after {
 		border-top-color: #fff;
 	}
-	.sidebar, .cta, footer .contact, footer .search {
+	.sidebar, #site-header .cta, footer .contact, footer .search {
 		padding: 0 2em 4em;
 	}
 	.sidebar {
@@ -494,6 +566,22 @@ footer #links a {
 		border-top: 2px solid;
 		border-bottom: 2px solid;
 	}
+	#articles article .article-hero {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	#articles footer div:first-of-type {
+		margin-top: 0;
+	}
+	#articles footer #author {
+		background: #4d4d4f;
+		color: #fff;
+		padding-top: 1em;
+	}
+	#author button {
+		color: #000;
+		margin: 1em 0;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -527,10 +615,13 @@ footer #links a {
 		-o-transform: translate(-50%,-50%);
 		transform: translate(-50%,-50%);
 	}
-	#policy-nav {
-		margin: 0 -1.3em;
+	#articles {
+		padding-left: 13%;
 	}
-	.sidebar, .cta, footer .search, footer #policy-nav {
+	#policy-nav {
+		/*margin: 0 -1.3em;*/
+	}
+	.sidebar, header#site-header .cta, footer .search, footer #policy-nav {
 		border: 1px solid #000;
 		border-right: none 0;
 	}
