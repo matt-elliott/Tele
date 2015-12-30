@@ -18,7 +18,7 @@
   <body>
 	  
 	<div class="container-fluid">
-		<header class="row">
+		<header id="site-header" class="row">
 				<nav class="navbar" id="topNav">
 				  <div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -280,46 +280,82 @@
 		</div>
 		
 		<footer class="row bg-dgrey">
-			<div class="cta col-xs-12 visible-xs visible-sm">
-				<h3>Sign up for the latest fleet news and GPS trends</h3>
-				<form>
-					<input type="text" name="email" placeholder="Enter Your Email Address" class="col-xs-8" />
-					<button type="submit" name="submit" class="btn green-bg col-xs-4">Subscribe</button>
-				</form>
+			<div class="flex-wrapper">
+				<div class="cta col-xs-12 visible-xs visible-sm">
+					<h3>Sign up for the latest fleet news and GPS trends</h3>
+					<form>
+						<input type="text" name="email" placeholder="Enter Your Email Address" class="col-xs-8" />
+						<button type="submit" name="submit" class="btn green-bg col-xs-4">Subscribe</button>
+					</form>
+				</div>
+
+				<button class="btn download green-bg row visible-xs visible-sm">
+					<span class="glyphicon glyphicon-arrow-down">Download</span>
+					<span>Whatever name goes here MAX two lines before truncation</span>
+				</button>
+
+				<nav class="site-nav row">
+					<div class="col-xs-12 col-md-3">
+						<h4>Contact Us</h4>
+						<ul>
+							<li><a href="#">Customer Support</a></li>
+							<li><a href="#">Software Demo</a></li>
+							<li><a href="#">Sales Office</a></li>
+							<li><a href="#">Stolen Vehicle Support</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-3 hidden-xs hidden-sm">
+						<h4>Contact Us</h4>
+						<ul>
+							<li><a href="#">Customer Support</a></li>
+							<li><a href="#">Software Demo</a></li>
+							<li><a href="#">Sales Office</a></li>
+							<li><a href="#">Stolen Vehicle Support</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-3 hidden-xs hidden-sm">
+						<h4>Contact Us</h4>
+						<ul>
+							<li><a href="#">Customer Support</a></li>
+							<li><a href="#">Software Demo</a></li>
+							<li><a href="#">Sales Office</a></li>
+							<li><a href="#">Stolen Vehicle Support</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-3 hidden-xs hidden-sm">
+						<h4>Contact Us</h4>
+						<ul>
+							<li><a href="#">Customer Support</a></li>
+							<li><a href="#">Software Demo</a></li>
+							<li><a href="#">Sales Office</a></li>
+							<li><a href="#">Stolen Vehicle Support</a></li>
+						</ul>
+					</div>
+				</nav>
+
+				<div id="search" class="bg-grey clearfix visible-xs visible-sm">
+					<form class="clearfix col-xs-12">
+						<input type="text" name="email" placeholder="Search" class="col-xs-8 bg-dgrey" />
+						<button type="submit" name="submit" class="glyphicon glyphicon-search col-xs-4"></button>
+					</form>
+				</div>
+
+				<div id="links" class="visible-md visible-lg">
+					<a href="#" class="btn green-bg">Get A Demo</a>
+					<a href="#" class="btn green-bg">Get Quote</a>
+					<a href="#" class="btn green-bg">Contact Us</a>
+				</div>
+				
+				<div id="social-networks" class="animate">
+					<ul>
+						<li><a href="#" title="Facebook"><img src="_images/_social/fb.png" alt="Facebook" /></a></li>
+						<li><a href="#" title="Twitter"><img src="_images/_social/tw.png" alt="Twitter" /></a></li>
+						<li><a href="#" title="LinkedIn"><img src="_images/_social/in.png" alt="LinkedIn" /></a></li>
+						<li><a href="#" title="Google+"><img src="_images/_social/g+.png" alt="Google+" /></a></li>
+						<li><a href="#" title="YouTube"><img src="_images/_social/yt.png" alt="YouTube" /></a></li>
+					</ul>
+				</div>
 			</div>
-			
-			<button class="btn download green-bg row visible-xs visible-sm">
-				<span class="glyphicon glyphicon-arrow-down">Download</span>
-				<span>Whatever name goes here MAX two lines before truncation</span>
-			</button>
-			
-			<nav class="contact visible-xs visible-sm">
-				<h4>Contact Us</h4>
-				<ul>
-					<li><a href="#">Customer Support</a></li>
-					<li><a href="#">Software Demo</a></li>
-					<li><a href="#">Sales Office</a></li>
-					<li><a href="#">Stolen Vehicle Support</a></li>
-				</ul>
-			</nav>
-			
-			<div id="search" class="bg-grey clearfix visible-xs visible-sm">
-				<form class="clearfix col-xs-12">
-					<input type="text" name="email" placeholder="Search" class="col-xs-8 bg-dgrey" />
-					<button type="submit" name="submit" class="glyphicon glyphicon-search col-xs-4"></button>
-				</form>
-			</div>
-			
-			<div id="social-networks" class="animate visible-xs visible-sm">
-				<ul>
-					<li><a href="#" title="Facebook"><img src="_images/_social/fb.png" alt="Facebook" /></a></li>
-					<li><a href="#" title="Twitter"><img src="_images/_social/tw.png" alt="Twitter" /></a></li>
-					<li><a href="#" title="LinkedIn"><img src="_images/_social/in.png" alt="LinkedIn" /></a></li>
-					<li><a href="#" title="Google+"><img src="_images/_social/g+.png" alt="Google+" /></a></li>
-					<li><a href="#" title="YouTube"><img src="_images/_social/yt.png" alt="YouTube" /></a></li>
-				</ul>
-			</div>
-			
 			<nav id="policy-nav">
 				<ul>
 					<li class="copyright">&copy; Teletrac Inc.</li>
