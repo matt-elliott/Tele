@@ -399,6 +399,9 @@ footer .site-nav {
 footer .site-nav div {
 	padding: 0 3em;
 }
+footer form {
+	display: flex;
+}
 footer #links {
 	display: flex;
 	flex-direction: row;
