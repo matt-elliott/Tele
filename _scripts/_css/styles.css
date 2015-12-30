@@ -120,10 +120,6 @@ header {
 /* HEADER [END] */
 
 /* POST INDEX [START] */
-#posts {
-	border-top: 1px solid #babcbe;
-	border-bottom: 1px solid #babcbe;
-}
 #posts .post { 
 	margin: 2em 0;
 }
@@ -193,8 +189,6 @@ header {
 /* SIDEBAR [START] */
 .sidebar {
 	position: relative;
-	border: 1px solid #000;
-	border-right: none 0;
 }
 .select-cat {
 	margin: 1em 0 6em;
@@ -204,7 +198,7 @@ header {
 #pagination .select-cat {
 	margin-top: 0;
 	margin-bottom: 0;
-	margin-left: 11em;
+	float: right;
 }
 .select-cat::after {
 	content: "\e250";
@@ -279,7 +273,8 @@ header .cta form {
 	text-align: left;
 	font-size: 0.7em;
 	border-radius: 0;
-	margin: 0 1em;
+	max-width: 94%;
+	margin: 0 auto;
 }
 .download span {
 	display: inline-block;
@@ -454,6 +449,10 @@ footer h4 {
 }
 
 @media screen and (min-width: 992px) {
+	#posts {
+		border-top: 1px solid #babcbe;
+		border-bottom: 1px solid #babcbe;
+	}
 	#posts .post header {
 		padding: 0;
 	}
@@ -482,6 +481,10 @@ footer h4 {
 	}
 	#policy-nav {
 		margin: 0 -1.3em;
+	}
+	.sidebar, .cta, footer .contact, footer .search, footer #policy-nav {
+		border: 1px solid #000;
+		border-right: none 0;
 	}
 }
 /* RESPONSIVE [END] */
