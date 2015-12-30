@@ -133,14 +133,14 @@ header#site-header {
 	padding: 3em 0;
 }
 #posts .post { 
-	margin: 0;
+	margin: 2em 0;
 }
 #posts .post .post-thumbnail {
 	position: relative;
 	padding: 0;
 }
 #posts .post .post-thumbnail img {
-	min-width: 100%;
+	/*min-width: 100%;*/
 	width: auto;
 }
 #posts .post .content p a.read-more {
@@ -425,6 +425,29 @@ header#site-header .cta button[type='submit'] {
 }
 /* ARTICLE PAGE [END] */
 
+/* AUTHOR PAGE [START] */
+#author-articles #index-header {
+	margin-right: 1em;
+	/*border-bottom: 2px solid #6a747c;*/
+}
+#author-articles #posts {
+	padding: 0 0 3em;
+	margin-top: 2em;
+}
+#author-articles header h1,
+#author-articles header h3 {
+	margin: 0;
+}
+.author {
+	padding: 2em 1em;
+	margin: 1em 0;
+	color: #fff;
+}
+.author button {
+	color: #000;
+}
+/* AUTHOR PAGE [END] */
+
 /* BACK TO TOP [START] */
 #back-to-top {
 	margin: 0 0 4em;
@@ -589,10 +612,16 @@ footer #links a {
 		border-top: 1px solid #babcbe;
 		border-bottom: 1px solid #babcbe;
 	}
+	#author-index #posts .post {
+		padding: 0;
+	}
+	#author-index #posts .post figure {
+		margin-right: 1em;
+	}
 	#posts .post header {
 		padding: 0;
 	}
-	#posts .post .post-thumbnail {
+	main#article #posts .post .post-thumbnail {
 		max-height: 210px;
 		min-height: 210px;
 		overflow: hidden;
@@ -602,7 +631,7 @@ footer #links a {
 		margin: 0 auto;
 */
 	}
-	#posts .post .post-thumbnail img {
+	main#article #posts .post .post-thumbnail img {
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -615,7 +644,7 @@ footer #links a {
 		-o-transform: translate(-50%,-50%);
 		transform: translate(-50%,-50%);
 	}
-	#articles {
+	#articles, #author-articles {
 		padding-left: 13%;
 	}
 	#policy-nav {

@@ -67,80 +67,194 @@
 		
 		<div class="row wrapper">
 			
-			<main id="article" class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
-				<section id="articles" class="clearfix">
-					<article>
-						<header>
-							<ol class="breadcrumb">
-							  <li><a href="#">Home</a></li>
-							  <li><a href="#">Blog</a></li>
-							  <li class="active">Category Name</li>
-							</ol>
-							
-							<h1 class="title">This is the main title</h1>
-							<h4 class="credits">
-								<span class="date">MM/DD/YYYY</span>
-								<a class="author-link">Author Name</a>
-							</h4>
-						</header>
+			<main id="author-index" class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+				<section id="author-articles" class="clearfix row">
+					<header id="index-header">
+						<ol class="breadcrumb">
+						  <li><a href="#">Home</a></li>
+						  <li><a href="#">Blog</a></li>
+						  <li class="active">Firstname Surname</li>
+						</ol>
 						
-						<figure id="article-hero">
-							<img src="_images/article-hero.jpg" class="img-responsive" />
-						</figure>
-						
-						<h2 class="sub-title">The complete H2 text used in desktop will appear here</h2>
-						<p>
-							Spectrum dynamic scalar algorithm optical reverberated converter digital element procedural scan concept. Timer internet distributed wavelength supporting cascading wave kilohertz development passive plasma. Or converter cable fluctuating indeterminate deviation the. Bypass transistorized distortion scalar. Logistically null high messaging software laser frequency specification femtosecond high-level transponder.
-						</p>
-						<p>
-							Spectrum dynamic scalar algorithm optical reverberated converter digital element procedural scan concept. Timer internet distributed wavelength supporting cascading wave kilohertz development passive plasma. Or converter cable fluctuating indeterminate deviation the. Bypass transistorized distortion scalar. Logistically null high messaging software laser frequency specification femtosecond high-level transponder.
-						</p>
-						<p>
-							Spectrum dynamic scalar algorithm optical reverberated converter digital element procedural scan concept. Timer internet distributed wavelength supporting cascading wave kilohertz development passive plasma. Or converter cable fluctuating indeterminate deviation the. Bypass transistorized distortion scalar. Logistically null high messaging software laser frequency specification femtosecond high-level transponder.
-						</p>
-						<p>
-							Spectrum dynamic scalar algorithm optical reverberated converter digital element procedural scan concept. Timer internet distributed wavelength supporting cascading wave kilohertz development passive plasma. Or converter cable fluctuating indeterminate deviation the. Bypass transistorized distortion scalar. Logistically null high messaging software laser frequency specification femtosecond high-level transponder.
-						</p>
-						<p>
-							Spectrum dynamic scalar algorithm optical reverberated converter digital element procedural scan concept. Timer internet distributed wavelength supporting cascading wave kilohertz development passive plasma. Or converter cable fluctuating indeterminate deviation the. Bypass transistorized distortion scalar. Logistically null high messaging software laser frequency specification femtosecond high-level transponder.
-						</p>
-					</article>
+						<div id="author-title" class="hidden-xs">
+							<h1>Author Page Title</h1>
+							<h3>Subtitle about the page and the articles. Maybe something short about the author or general content of the page</h3>
+						</div>
+					</header>
 					
-					<footer class="clearfix">
-						<button id="back-to-top" class="btn green-bg">
-							<span class="glyphicon glyphicon-arrow-up"></span>
-							<span>back to top</span>
-						</button>
-						
-						<div id="author" class="clearfix">
-							<figure class="author-pic col-md-3 hidden-xs">
-								<img src="_images/author-pic.jpg" class="img-responsive" />
+					<div class="author hidden-md hidden-lg bg-dgrey clearfix">
+						<figure class="author-pic col-md-3">
+							<img src="_images/_author/profile.jpg" class="img-responsive" />
+						</figure>
+						<div class="col-md-9">
+							<h6 class="name">Author Name</h6>
+							<p>Spectrum dynamic scalar algorithm optical reverberated converter digital element procedural scan concept. Timer internet distributed wavelength supporting cascading wave kilohertz development passive plasma.</p>
+							
+							<button>More Articles from this Author</button>
+							<button class="linkedin-follow-btn"><img src="_images/linkedin-square.jpg" /> Follow</button>
+						</div>
+					</div>
+					
+					<div id="posts" class="clearfix">
+						<article class="post clearfix col-xs-12 col-md-12 col-lg-12">
+							<figure class="post-thumbnail col-xs-5 col-md-3">
+								<img src="_images/_author/article.jpg" alt="Post Title" class="img-responsive" />
 							</figure>
-							<div class="col-md-9">
-								<h6 class="name">Author Name</h6>
-								<p>Spectrum dynamic scalar algorithm optical reverberated converter digital element procedural scan concept. Timer internet distributed wavelength supporting cascading wave kilohertz development passive plasma.</p>
-								
-								<button>More Articles from this Author</button>
-								<button class="linkedin-follow-btn"><img src="_images/linkedin-square.jpg" /> Follow</button>
+							<div class="col-xs-7 col-md-8">
+								<header>
+									<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
+									<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author hidden-xs">by Firstname Lastname</span></p>
+								</header>
+								<div class="content hidden-xs">
+									<p>
+										The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+									</p>
+								</div>
 							</div>
-						</div>
-						
-						<div id="article-comments" class="clearfix">
-							<header class="bg-lgrey clearfix">
-								<h5 class="cta col-md-6">Add something to this story. Add it below.</h5>
-								<span class="col-md-6"><span class="comment-number">xxx</span> comments</span>
-							</header>
-							<textarea>
-							</textarea>
-							<footer>
-								<button type="submit">Send</button>
-							</footer>
-						</div>
-					</footer>	
+						</article>
+						<article class="post clearfix col-xs-12 col-md-12 col-lg-12">
+							<figure class="post-thumbnail col-xs-5 col-md-3">
+								<img src="_images/_author/article-1.jpg" alt="Post Title" class="img-responsive" />
+							</figure>
+							<div class="col-xs-7 col-md-8">
+								<header>
+									<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
+									<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author hidden-xs">by Firstname Lastname</span></p>
+								</header>
+								<div class="content hidden-xs">
+									<p>
+										The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+									</p>
+								</div>
+							</div>
+						</article>
+						<article class="post clearfix col-xs-12 col-md-12 col-lg-12">
+							<figure class="post-thumbnail col-xs-5 col-md-3">
+								<img src="_images/_author/article.jpg" alt="Post Title" class="img-responsive" />
+							</figure>
+							<div class="col-xs-7 col-md-8">
+								<header>
+									<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
+									<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author hidden-xs">by Firstname Lastname</span></p>
+								</header>
+								<div class="content hidden-xs">
+									<p>
+										The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+									</p>
+								</div>
+							</div>
+</article>
+						<article class="post clearfix col-xs-12 col-md-12 col-lg-12">
+	<figure class="post-thumbnail col-xs-5 col-md-3">
+		<img src="_images/_author/article-1.jpg" alt="Post Title" class="img-responsive" />
+	</figure>
+	<div class="col-xs-7 col-md-8">
+		<header>
+			<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
+			<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author hidden-xs">by Firstname Lastname</span></p>
+		</header>
+		<div class="content hidden-xs">
+			<p>
+				The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+			</p>
+		</div>
+	</div>
+</article>
+						<article class="post clearfix col-xs-12 col-md-12 col-lg-12">
+							<figure class="post-thumbnail col-xs-5 col-md-3">
+								<img src="_images/_author/article.jpg" alt="Post Title" class="img-responsive" />
+							</figure>
+							<div class="col-xs-7 col-md-8">
+								<header>
+									<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
+									<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author hidden-xs">by Firstname Lastname</span></p>
+								</header>
+								<div class="content hidden-xs">
+									<p>
+										The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+									</p>
+								</div>
+							</div>
+						</article>
+						<article class="post clearfix col-xs-12 col-md-12 col-lg-12">
+							<figure class="post-thumbnail col-xs-5 col-md-3">
+								<img src="_images/_author/article-1.jpg" alt="Post Title" class="img-responsive" />
+							</figure>
+							<div class="col-xs-7 col-md-8">
+								<header>
+									<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
+									<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author hidden-xs">by Firstname Lastname</span></p>
+								</header>
+								<div class="content hidden-xs">
+									<p>
+										The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+									</p>
+								</div>
+							</div>
+						</article>
+						<article class="post clearfix col-xs-12 col-md-12 col-lg-12">
+							<figure class="post-thumbnail col-xs-5 col-md-3">
+								<img src="_images/_author/article.jpg" alt="Post Title" class="img-responsive" />
+							</figure>
+							<div class="col-xs-7 col-md-8">
+								<header>
+									<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
+									<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author hidden-xs">by Firstname Lastname</span></p>
+								</header>
+								<div class="content hidden-xs">
+									<p>
+										The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+									</p>
+								</div>
+							</div>
+</article>
+						<article class="post clearfix col-xs-12 col-md-12 col-lg-12">
+							<figure class="post-thumbnail col-xs-5 col-md-3">
+								<img src="_images/_author/article-1.jpg" alt="Post Title" class="img-responsive" />
+							</figure>
+							<div class="col-xs-7 col-md-8">
+								<header>
+									<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
+									<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author hidden-xs">by Firstname Lastname</span></p>
+								</header>
+								<div class="content hidden-xs">
+									<p>
+										The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					
 				</section>
-
+				
+				<aside id="pagination" class="col-xs-12 col-md-12 col-lg-12">
+					<a href="#" class="prev-page glyphicon glyphicon-menu-left green hidden-xs"></a>
+					<a href="#" class="prev glyphicon glyphicon-menu-left green"></a>
+					<ul class="pages">
+						<li>1</li>
+						<li>2</li>
+						<li class="active">3</li>
+						<li class="counter hidden-xs hidden-sm">x of xx</li>
+					</ul>
+					<a href="#" class="next glyphicon glyphicon-menu-right green"></a>
+					<a href="#" class="next-page glyphicon glyphicon-menu-right green hidden-xs"></a>
+					<button class="btn green-bg select-cat hidden-xs hidden-sm" type="button">Select Blog Category</button>
+				</aside>
 				
 			</main>
+			<div class="author hidden-sm hidden-xs bg-dgrey col-md-3 col-lg-3 clearfix">
+				<figure class="author-pic col-sm-12 col-md-12">
+					<img src="_images/_author/profile.jpg" class="img-responsive" />
+				</figure>
+				<div class="col-md-12">
+					<h6 class="name">Author Name</h6>
+					<p>Spectrum dynamic scalar algorithm optical reverberated converter digital element procedural scan concept. Timer internet distributed wavelength supporting cascading wave kilohertz development passive plasma.</p>
+					
+					<button>More Articles from this Author</button>
+					<button class="linkedin-follow-btn"><img src="_images/linkedin-square.jpg" /> Follow</button>
+				</div>
+			</div>
 			<aside class="sidebar bg-lgrey col-xs-12 col-sm-6 col-md-3 col-lg-3 clearfix">
 				<button class="btn green-bg select-cat hidden-xs hidden-sm" type="button">Select Blog Category</button>
 
