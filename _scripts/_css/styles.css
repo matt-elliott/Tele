@@ -41,6 +41,9 @@ button, a {
 	content:  ":";
 	padding: 0 5px 0 2px;
 }
+.container-fluid > .wrapper {
+	max-width: 1336px;
+}
 /* BOOTSTARP OVERRIDES [END] */
 
 /* COLORS [START] */
