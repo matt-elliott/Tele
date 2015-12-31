@@ -461,8 +461,8 @@ header#site-header .cta button[type='submit'] {
 }
 /* BACK TO TOP [END] */
 #sthoverbuttons {
-	margin-left: 6%;
-	margin-top: 10%;
+	margin-left: 6%!important;
+	margin-top: 10%!important;
 }
 /* FOOTER [START] */
 footer {
