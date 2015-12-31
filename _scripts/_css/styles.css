@@ -29,7 +29,7 @@ Background Grey			:	#dad9d7
 	padding-left: 1em;
 	padding-right: 1em;
 }
-button, a {
+button, a, .badge, select {
 	border-radius: 0!important;
 }
 .breadcrumb {
@@ -43,6 +43,7 @@ button, a {
 }
 .container-fluid > .wrapper {
 	max-width: 1336px;
+	margin: 0 auto;
 }
 /* BOOTSTARP OVERRIDES [END] */
 
@@ -210,6 +211,7 @@ header#site-header {
 	margin: 1em 0 6em;
 	text-transform: uppercase;
 	font-size: 0.8em;
+	height: 30px;
 }
 #pagination .select-cat {
 	margin-top: 0;
@@ -252,9 +254,9 @@ header#site-header.cta {
 	padding: 0 2em;
 }
 header#site-header .cta {
+	font-size: 0.8em;
 	padding: 1.3em;
-	max-width: 50%;
-	font-size: 1em;
+	max-width: 40%;
 	margin-right: 6.6%;
 	float: right;
 }
@@ -581,12 +583,16 @@ footer #links a {
 	#posts .post#latest-post {
 		background-color: #dad9d7;
 		margin-bottom: 4em;
+		padding: 0;
+	}
+	#posts .post#latest-post header, #posts .post#latest-post .content {
+		padding: 0 3em;
 	}
 	#posts .post#latest-post h6 {
 		font-size: 1.8em;
 	}
 	#posts .post#latest-post .post-thumbnail {
-		margin: 0 -1em;
+		/*margin: 0 -1em;*/
 	}
 	#pagination {
 		text-align: center;
@@ -617,7 +623,12 @@ footer #links a {
 		border-bottom: 1px solid #babcbe;
 	}
 	#author-index #posts .post {
-		padding: 0;
+		padding: 2em 0;
+		border-bottom: 1px solid #babcbe;
+		margin: 0 0 1em;
+	}
+	#author-index #posts .post:last-of-type {
+		border-bottom: none 0;
 	}
 	#author-index #posts .post figure {
 		margin-right: 1em;
@@ -665,7 +676,7 @@ footer #links a {
 		flex-direction: column-reverse;
 	}
 	footer #social-networks {
-		max-width: 30%;
+		max-width: 25%;
 	}
 	footer .site-nav {
 		margin: 0 auto 4em;
