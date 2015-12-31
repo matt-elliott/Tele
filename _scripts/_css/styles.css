@@ -254,9 +254,9 @@ header#site-header.cta {
 	padding: 0 2em;
 }
 header#site-header .cta {
-	font-size: 0.8em;
+	font-size: 0.7em;
 	padding: 1.3em;
-	max-width: 40%;
+	max-width: 32%;
 	margin-right: 6.6%;
 	float: right;
 }
@@ -268,7 +268,7 @@ header#site-header .cta h3 {
 	width: 30%;
 	font-size: 1em;
 	font-weight: 200;
-	margin: 0 5% 0 0;
+	margin: 0 2% 0 0;
 	text-transform: uppercase;
 	line-height: 1.4;
 	color: #fff;
@@ -286,6 +286,7 @@ header#site-header .cta input[type='text'] {
 }
 header#site-header .cta button[type='submit'] {
 	color: #000;
+	font-size: inherit;
 }
 .download {
 	white-space: normal;
@@ -459,7 +460,10 @@ header#site-header .cta button[type='submit'] {
 	margin: 0 0 4em;
 }
 /* BACK TO TOP [END] */
-
+#sthoverbuttons {
+	margin-left: 6%;
+	margin-top: 10%;
+}
 /* FOOTER [START] */
 footer {
 	position: relative;
