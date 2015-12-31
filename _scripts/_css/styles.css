@@ -538,6 +538,10 @@ footer #links a {
 }
 
 @media screen and (max-width: 991px) {
+	#sthoverbuttons {
+		display: none!important;
+	}
+
 	#latest-post::after,
 	.arrow::after {
 		content: ' ';
