@@ -256,7 +256,7 @@ header#site-header.cta {
 header#site-header .cta {
 	font-size: 0.7em;
 	padding: 1.3em;
-	max-width: 32%;
+	max-width: 320px;
 	margin-right: 6.6%;
 	float: right;
 }
