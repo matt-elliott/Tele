@@ -266,6 +266,7 @@ header#site-header .cta h3 {
 	margin: 0 5% 0 0;
 	text-transform: uppercase;
 	line-height: 1.4;
+	color: #fff;
 }
 header#site-header .cta form {
 	width: 64%;
@@ -287,7 +288,7 @@ header#site-header .cta button[type='submit'] {
 	font-size: 0.7em;
 	border-radius: 0;
 	max-width: 94%;
-	margin: 0 auto;
+	margin: 2em auto;
 }
 .download span {
 	display: inline-block;
