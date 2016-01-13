@@ -42,7 +42,7 @@ button, a, .badge, select {
 	padding: 0 5px 0 2px;
 }
 .container-fluid > .wrapper {
-	max-width: 1336px;
+	max-width: 1366px;
 	margin: 0 auto;
 }
 /* BOOTSTARP OVERRIDES [END] */
@@ -111,6 +111,27 @@ input {
 	background: transparent;
 	border: none;
 	padding: 0.5em 1em;
+}
+#type-wrapper {
+	background: #f6f6f6;
+}
+#type-wrapper [class*='type-'] {
+	margin: 3em 9em;
+	padding-top: 3em;
+}
+#type-wrapper [class*='type-']:first-of-type {
+	padding-top: 0;
+}
+#type-wrapper [class*='type-'] + [class*='type-'] {
+	border-top: 1px solid #03698f;
+}
+#type-wrapper .post {
+	max-width: 30.2%;
+	padding: 0;
+	margin-right: 3.7em;
+}
+#type-wrapper .post:last-of-type {
+	margin: 0;
 }
 /* GLOBAL [END] */
 
