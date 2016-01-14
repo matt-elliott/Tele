@@ -20,34 +20,89 @@
 	<div class="container-fluid">
 		<header id="site-header" class="row">
 				<nav class="navbar" id="topNav">
-				  <div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					  </button>
-					  <a class="navbar-brand col-xs-6 col-md-12 col-lg-12" href="#"><img src="_images/teletrac-logo.png" alt="teletrac" class="img-responsive" /></a>
-					  <a class="btn btn-circle phone green pull-right visible-xs" href="tel:555-555-5555"><i class="glyphicon glyphicon-earphone"></i></a>
-					</div>
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  <a class="navbar-brand col-xs-6 col-md-12 col-lg-12" href="#"><img src="_images/teletrac-logo.png" alt="teletrac" class="img-responsive" /></a>
+						  <a class="btn btn-circle phone green pull-right visible-xs" href="tel:555-555-5555"><i class="glyphicon glyphicon-earphone"></i></a>
+						</div>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="mainNav">
-					  <ul class="nav navbar-nav">
-						<li class="active"><a href="#">Read Our Blog <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Contact Us </a></li>
-						<li class="dropdown">
-						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations <span class="caret"></span></a>
-						  <ul class="dropdown-menu">
-							<li><a href="#">Australia</a></li>
-							<li><a href="#">Mexico</a></li>
-							<li><a href="#">New Zealand</a></li>
-							<li><a href="#">United Kingdom</a></li>
-							<li><a href="#">United States</a></li>
-						  </ul>
-						</li>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="mainNav">
+							<ul class="nav navbar-nav" id="customer-nav">
+								<li><a href="#">Customer Login</a></li>
+								<li><a href="#">Read Our Blog</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+
+							<form class="form-inline" id="search">
+								<div class="form-group">
+									<label class="sr-only" for="site-search">Email address</label>
+									<input type="email" class="form-control" id="site-search" placeholder="Search">
+								</div>
+							</form>
+
+							<a href="tel:(+1) 800 XXX-XXXX" id="phone-number">(+1) 800 XXX-XXXX</a>
+
+							<ul class="nav navbar-nav" id="location-nav">
+								<li class="dropdown">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations <span class="caret"></span></a>
+								  <ul class="dropdown-menu">
+									<li><a href="#">Australia</a></li>
+									<li><a href="#">Mexico</a></li>
+									<li><a href="#">New Zealand</a></li>
+									<li><a href="#">United Kingdom</a></li>
+									<li><a href="#">United States</a></li>
+								  </ul>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav" id="site-nav">
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fleet Management Software <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+								<li><a href="#">Item 5</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Why GPS Fleet Tracking <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+								<li><a href="#">Item 5</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industries <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+								<li><a href="#">Item 5</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+								<li><a href="#">Item 5</a></li>
+							  </ul>
+							</li>
 						</ul>
 					  </div>
 					</div>
@@ -62,16 +117,13 @@
 			</div>
 		</header>
 		
-		<div class="row wrapper">
-			<main id="index" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-				<section id="posts" class="clearfix">
-					<header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<h1>Page Title</h1>
-						<h3>Subtitle about the page and the articles. Maybe something short about the author or general content of the page</h3>
-					</header>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4" id="latest-post">
+<!--		<div class="row wrapper">-->
+<!--			<main id="index" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+			<section id="type-wrapper" class="row clearfix">
+				<div class="type-x clearfix">
+					<h3>The Knowledge Base</h3>
+					<article class="post clearfix col-xs-12 col-sm-4 col-md-4 col-lg-4">
 						<header class="hidden-md hidden-lg">
-							<span class="badge">Latest Blog Article</span>
 							<h2>The complete headline as would appear on desktop would be used here</h2>
 							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
 						</header>
@@ -88,216 +140,109 @@
 								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
 							</p>
 						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img-2.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img-3.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img-2.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img-2.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
 					</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img-2.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+					<article class="post clearfix col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<header class="hidden-md hidden-lg">
+							<h2>The complete headline as would appear on desktop would be used here</h2>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
 						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img-3.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img-2.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-					<article class="post clearfix col-xs-12 col-md-4 col-lg-4">
-						<figure class="post-thumbnail col-xs-5 col-md-12">
-							<img src="_images/article-img-2.jpg" alt="Post Title" class="img-responsive" />
-						</figure>
-						<header class="col-xs-7 col-md-12">
-							<h6 class="title"><a href="#">Same headline as on desktop.</a></h6>
-							<p class="credits"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
-						</header>
-						<div class="content hidden-xs">
-							<p>
-								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
-							</p>
-						</div>
-</article>
-				</section>
-
-				<aside id="pagination" class="col-xs-12 col-md-12 col-lg-12">
-					<a href="#" class="prev-page glyphicon glyphicon-menu-left green hidden-xs"></a>
-					<a href="#" class="prev glyphicon glyphicon-menu-left green"></a>
-					<ul class="pages">
-						<li>1</li>
-						<li>2</li>
-						<li class="active">3</li>
-						<li class="counter hidden-xs hidden-sm">x of xx</li>
-					</ul>
-					<a href="#" class="next glyphicon glyphicon-menu-right green"></a>
-					<a href="#" class="next-page glyphicon glyphicon-menu-right green hidden-xs"></a>
-					<select class="btn green-bg select-cat hidden-xs hidden-sm" type="button">
-						<option disabled="disabled" selected="selected">Select Blog Category</option>
-						<option>Category 1</option>
-						<option>Category 2</option>
-						<option>Category 3</option>	
-					</select>
-				</aside>
-			</main>
-			<aside class="sidebar bg-lgrey col-xs-12 col-sm-12 col-md-3 col-lg-3 clearfix">
-				<select class="btn green-bg select-cat hidden-xs hidden-sm" type="button">
-					<option disabled="disabled" selected="selected">Select Blog Category</option>
-					<option>Category 1</option>
-					<option>Category 2</option>
-					<option>Category 3</option>	
-				</select>
-
-				<section class="posts col-xs-12 col-md-12 col-lg-12">
-					<article class="post clearfix">
 						<figure class="post-thumbnail">
-							<img src="_images/article-img-2.jpg" alt="Post Title" class="img-responsive" />
-							<figcaption><a href="#">WhitePaper titles goes here on two lines if necessary.</a></figcaption>
+							<img src="_images/article-img.jpg" alt="Post Title" class="img-responsive" />
 						</figure>
+						<header class="hidden-xs hidden-sm">
+							<h6 class="cut">Same headline as on desktop.</h6>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+						</header>
+						<div class="content">
+							<h6 class="cut hidden-lg hidden-md"><a href="#">Same headline as on desktop.</a></h6>
+							<p>
+								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+							</p>
+						</div>
 					</article>
-					<article class="post clearfix">
+					<article class="post clearfix col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<header class="hidden-md hidden-lg">
+							<h2>The complete headline as would appear on desktop would be used here</h2>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+						</header>
 						<figure class="post-thumbnail">
-							<img src="_images/article-img-2.jpg" alt="Post Title" class="img-responsive" />
-							<figcaption><a href="#">WhitePaper titles goes here on two lines if necessary.</a></figcaption>
+							<img src="_images/article-img.jpg" alt="Post Title" class="img-responsive" />
 						</figure>
+						<header class="hidden-xs hidden-sm">
+							<h6 class="cut">Same headline as on desktop.</h6>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+						</header>
+						<div class="content">
+							<h6 class="cut hidden-lg hidden-md"><a href="#">Same headline as on desktop.</a></h6>
+							<p>
+								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+							</p>
+						</div>
 					</article>
-	</section>
-
-				<section class="related col-xs-12 col-md-12 col-lg-12">
-						<h4>You May Also Like:</h4>
-						<ul>
-							<li><img src="_images/_sidebar/sidebar_03.jpg" class="img-responsive hidden-xs hidden-sm" /><a hre="#">Outbrain story title goes here same as desktop, no image</a></li>
-							<li><img src="_images/_sidebar/sidebar_06.jpg" class="img-responsive hidden-xs hidden-sm" /><a hre="#">Outbrain story title goes here same as desktop, no image</a></li>
-							<li><img src="_images/_sidebar/sidebar_08.jpg" class="img-responsive hidden-xs hidden-sm" /><a hre="#">Outbrain story title goes here same as desktop, no image</a></li>
-						</ul>
-						<p class="sponsor">Recomended by <img src="" /></p>
-	</section>
-			</aside>
-		</div>
+				</div>
+				<div class="type-x clearfix">
+					<h3>The Knowledge Base</h3>
+					<article class="post clearfix col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<header class="hidden-md hidden-lg">
+							<h2>The complete headline as would appear on desktop would be used here</h2>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+						</header>
+						<figure class="post-thumbnail">
+							<img src="_images/article-img.jpg" alt="Post Title" class="img-responsive" />
+						</figure>
+						<header class="hidden-xs hidden-sm">
+							<h6 class="cut">Same headline as on desktop.</h6>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+						</header>
+						<div class="content">
+							<h6 class="cut hidden-lg hidden-md"><a href="#">Same headline as on desktop.</a></h6>
+							<p>
+								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+							</p>
+						</div>
+					</article>
+					<article class="post clearfix col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<header class="hidden-md hidden-lg">
+							<h2>The complete headline as would appear on desktop would be used here</h2>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+						</header>
+						<figure class="post-thumbnail">
+							<img src="_images/article-img.jpg" alt="Post Title" class="img-responsive" />
+						</figure>
+						<header class="hidden-xs hidden-sm">
+							<h6 class="cut">Same headline as on desktop.</h6>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+						</header>
+						<div class="content">
+							<h6 class="cut hidden-lg hidden-md"><a href="#">Same headline as on desktop.</a></h6>
+							<p>
+								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+							</p>
+						</div>
+					</article>
+					<article class="post clearfix col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<header class="hidden-md hidden-lg">
+							<h2>The complete headline as would appear on desktop would be used here</h2>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+						</header>
+						<figure class="post-thumbnail">
+							<img src="_images/article-img.jpg" alt="Post Title" class="img-responsive" />
+						</figure>
+						<header class="hidden-xs hidden-sm">
+							<h6 class="cut">Same headline as on desktop.</h6>
+							<p class="credits visible-md visible-lg"><span class="date">YYYY/MM/DD</span> <span class="author-name hidden-xs">by Firstname Lastname</span></p>
+						</header>
+						<div class="content">
+							<h6 class="cut hidden-lg hidden-md"><a href="#">Same headline as on desktop.</a></h6>
+							<p>
+								The first x characters of the article appear here before being truncated, at which point encouraged to read more. <a href="#" class="read-more">Read more</a>
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
+<!--			</main>-->
+<!--		</div>-->
 		
 		<footer id="page-footer" class="row bg-dgrey">
 			<div class="flex-wrapper">
@@ -392,5 +337,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="_scripts/_js/bootstrap.min.js"></script>
+	<script src="_scripts/_js/wayoutmenu.boxed.min.js"></script>
   </body>
 </html>
