@@ -149,6 +149,9 @@ input {
 #topNav li a {
 	color: #4d4d4f;
 }
+#topNav li .bm-container a.main-link {
+	background: #fff;
+}
 #topNav .btn.phone {
 	font-size: 1.2em;
 	margin-right: 1em;
@@ -159,12 +162,71 @@ header#site-header {
 #mainNav {
 	padding-top: 1.3em;
 }
-#mainNav ul li a {
+#mainNav #site-nav .top-nav {
+	width: 100%;
+}
+#mainNav ul li a.main-link {
 	font-size: 0.7em;
 	text-transform: uppercase;
 }
 #mainNav #site-nav li > a {
 	font-size: 1em;
+}
+#mainNav #site-nav li > a.main-link::after {
+	content: "\e252";
+	display: inline-block;
+    font-family: 'Glyphicons Halflings';
+	font-size: 0.6em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+	margin-left: 0.8em;
+}
+#mainNav #site-nav .top-nav-mega-full-width {
+	background: #6b757e;
+	left: 0!important;
+	padding-top: 1.5em!important;
+	width: 100%!important;
+	max-width: 100%!important;
+	height: auto!important;
+}
+#mainNav #site-nav .top-nav-mega-full-width a {
+	color: #fff;
+	font-size: 0.9em;
+}
+#mainNav #site-nav .top-nav-mega-full-width [class*='col'] > [class*='col'] {
+	padding: 0 0.5em;
+	margin: 0 0 0.5em;
+}
+#mainNav #site-nav .fw-hovered {
+    background: #6b757e;
+    color: #fff;
+}
+#mainNav #site-nav .top-nav-mega-full-width .headline {
+	text-transform: uppercase;
+/*	font-size: 1.1em;*/
+	margin: 0 0.5em;
+	color: #fff;
+}
+#mainNav #site-nav .top-nav-mega-full-width .about {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 2px solid #fff;
+}
+#mainNav #site-nav .top-nav-mega-full-width ul,
+#mainNav #site-nav .top-nav-mega-full-width ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#mainNav #site-nav .top-nav-mega-full-width .headline + ul,
+#mainNav #site-nav .top-nav-mega-full-width .headline + ol {
+
+	margin: 0 0 1em 1.5em;
+}
+#mainNav #site-nav .top-nav-mega-full-width ul li,
+#mainNav #site-nav .top-nav-mega-full-width ol li {
+	height: auto!important;
 }
 #customer-nav {
 	width: 36%;
@@ -192,6 +254,15 @@ header#site-header {
 }
 /* HEADER [END] */
 
+/* MEGA MENU OVERRIDES [START] */
+#mainNav .bm-container {
+	background: transparent;
+}
+#mainNav .top-nav > ul > li:hover > a {
+	background: #6b757e;
+	color: #fff;
+}
+/* MEGA MENU OVERRIDES [END] */
 /* POST INDEX [START] */
 #posts {
 	padding: 3em 0;
@@ -568,6 +639,20 @@ footer #links a {
 /* FOOTER [END] */
 
 /* RESPONSIVE [START] */
+@media screen and (max-width: 767px) {
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+		margin: 0;
+	}
+	
+	header#site-header {
+		margin: 0 0 2em;
+	}
+	
+	#mainNav {
+		padding: 1.3em 0 0;
+		margin: 0;
+	}
+}
 @media screen and (min-width: 768px) {
 	#mainNav {
 		display: flex!important;
@@ -582,10 +667,10 @@ footer #links a {
 	}
 	
 	#mainNav > *:not(form) {
-		padding-top: 0.5em;
+		padding-top: 0;
 	}
 	#site-nav {
-		margin-top: 2em;
+		margin-top: 1em;
 	}
 /*
 	#mainNav #search .form-group {
