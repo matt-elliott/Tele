@@ -14,7 +14,7 @@ Background Grey			:	#dad9d7
 }
 .navbar-header {
 	padding: 1.8em 0 1.8em 3.2em;
-    width: 29%;
+/*    width: 29%;*/
 }
 .navbar-nav>li>a {
 	padding-top: 0;
@@ -229,7 +229,7 @@ header#site-header {
 	height: auto!important;
 }
 #customer-nav {
-	width: 36%;
+/*	width: 36%;*/
 }
 #phone-number {
 	width: 15%;
@@ -639,6 +639,23 @@ footer #links a {
 /* FOOTER [END] */
 
 /* RESPONSIVE [START] */
+@media screen and (max-width: 537px) {
+	.top-nav ul li {
+		display: block;
+		float: none;
+	}
+	#mainNav #site-nav .top-nav-mega-full-width {
+		display: block;
+		float: none;
+		top: 0;
+		position: relative;
+	}
+}
+@media screen and (min-width: 538px) {
+	.navbar-nav>li {
+		float: left;
+	}
+}
 @media screen and (max-width: 767px) {
 	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
 		margin: 0;
@@ -687,6 +704,11 @@ footer #links a {
 	#topNav .navbar-nav li.dropdown {
 /*		float: right;*/
 		margin-right: 1em;
+	}
+	
+	
+	#customer-nav {
+		width: 36%;
 	}
 	
 	footer#page-footer::before {
