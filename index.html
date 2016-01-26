@@ -9,7 +9,8 @@
 	<link href="_scripts/_css/bootstrap.min.css" rel="stylesheet">
 <!--    <link href="_scripts/_css/bootstrap-theme.min.css" rel="stylesheet">-->
 	<link href="_scripts/_css/wayoutmenu.css" rel="stylesheet">
-	<link href="_scripts/_css/wayoutmenuresponsive.css" rel="stylesheet">
+<!--	<link href="_scripts/_css/wayoutmenuresponsive.css" rel="stylesheet">-->
+<!--	  <link href="_scripts/_css/slicknav.min.css" rel="stylesheet">-->
 	<link href="_scripts/_css/styles.css" rel="stylesheet">
 	
     <!--[if lt IE 9]>
@@ -25,18 +26,14 @@
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
-						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						  </button>
-						  <a class="navbar-brand col-xs-6 col-md-12 col-lg-12" href="#"><img src="_images/teletrac-logo.png" alt="teletrac" class="img-responsive" /></a>
-						  <a class="btn btn-circle phone green pull-right visible-xs" href="tel:555-555-5555"><i class="glyphicon glyphicon-earphone"></i></a>
+
+							<a class="navbar-brand col-xs-6 col-md-12 col-lg-12" href="#"><img src="_images/teletrac-logo.png" alt="teletrac" class="img-responsive" /></a>
+							<div class="mobile menu pull-right col-xs-3" id="mobileMenu"></div>
+							<a class="btn btn-circle phone green pull-right visible-xs col-xs-2" href="tel:555-555-5555"><i class="glyphicon glyphicon-earphone"></i></a>
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="mainNav">
+						<div class="collapse navbar-collapse desktop" id="mainNav">
 							<ul class="nav navbar-nav col-sm-12 col-md-4" id="customer-nav">
 								<li><a href="#">Customer Login</a></li>
 								<li><a href="#">Read Our Blog</a></li>
@@ -329,7 +326,29 @@
 					  </div>
 					</div>
 				</nav>
-			
+				<div class="mobile" id="mobileNav">
+					<ul id="menu2">
+						<li>Fleet Management Software
+							<ul>
+								<li><a href="#">item 1</a></li>
+								<li><a href="#">item 2</a></li>
+								<li><a href="#">item 3</a></li>
+								<li><a href="#">item 4</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Why GPS Fleet Tracking</a></li>
+						<li><a href="#">Industries</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Read Our Blog</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li>Locations
+							<ul>
+								<li><a href="#">item 3</a></li>
+								<li><a href="#">item 4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			<div class="cta col-xs-12 visible-md visible-lg bg-dgrey">
 				<h3>Sign up for the latest fleet news and GPS trends</h3>
 				<form>
@@ -557,8 +576,12 @@
 		</footer>
 	</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="_scripts/_js/bootstrap.min.js"></script>
-	  <script src="_scripts/_js/wayoutmenu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="_scripts/_js/bootstrap.min.js"></script>
+	<script src="_scripts/_js/wayoutmenu.js"></script>
+	<script src="_scripts/_js/jquery.slicknav.min.js"></script>
+	<script src="_scripts/_js/main.js"></script>
+	
+	  
   </body>
 </html>
