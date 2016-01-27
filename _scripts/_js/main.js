@@ -1,4 +1,8 @@
 $(document).ready( function() {
+	if( document.width > 991 ) {
+		$('.parallax').parallax("50%", 0.5);
+	}
+	
 	$('#mobileNav #menu2').slicknav({
 		init: function() {
 			//find and kill origina menu since
