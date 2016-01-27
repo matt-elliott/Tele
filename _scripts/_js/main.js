@@ -1,5 +1,7 @@
 $(document).ready( function() {
-	if( document.width > 991 ) {
+	var vpw = document.documentElement.offsetWidth;
+	
+	if( vpw > 991 ) {
 		$('.parallax').parallax("50%", 0.5);
 	}
 	
