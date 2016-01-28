@@ -2,7 +2,7 @@ $(document).ready( function() {
 	var vpw = document.documentElement.offsetWidth;
 	
 	if( vpw > 991 ) {
-		$('.parallax').parallax("50%", 0.5);
+		$('.parallax').parallax("50%", 0.2);
 	}
 	
 	$('#mobileNav #menu2').slicknav({
