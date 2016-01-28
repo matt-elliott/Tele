@@ -56,7 +56,7 @@ button, a, .badge, select {
 	max-width: 1366px;
 	margin: 0 auto;
 }
-.row {
+.row:not(.flat) {
 	padding: 2.5em 0;
 }
 .row.full {
@@ -128,7 +128,7 @@ a:hover {
 	padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p,emph,span,strong,b,i {
+h1,h2,h3,h4,h5,h6,p,emph,span,strong,b,i,ul,ol {
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -342,6 +342,23 @@ header#site-header {
 }
 /* HEADER [END] */
 
+/* PAGE INTRO [START] */
+#page-intro {
+	background: #4d4d4d;
+	color: #fff;
+	padding-right: 25em;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+#page-intro h1 {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+#page-intro p {
+	font-size: 1.5em;
+}
+/* PAGE INTRO [END] */
+
 /* HERO SLIDER [START] */
 #hero-slider img {
 	width: 100%;
@@ -403,6 +420,10 @@ header#site-header {
 
 /* INTRO [END] */
 
+#knowledge-base .row {
+	padding: 0 15%!important;
+}
+
 /* FIGURE IMAGE GIRD [START] */
 figure.image-grid {
 	position: relative;
@@ -420,6 +441,18 @@ figure.image-grid figcaption {
 	clear: both;
 }
 /* FIGURE IMAGE GIRD [END] */
+
+/* SPEC [START] */
+#spec {
+	padding: 4em 15% 0;
+}
+
+#spec #cta-grid > div {
+	margin: 0;
+    padding: 0;
+    max-width: 290px;
+}
+/* SPEC [END] */
 
 /* MEGA MENU OVERRIDES [START] */
 #mainNav .bm-container {
