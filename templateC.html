@@ -22,7 +22,7 @@
   <body>
 	  
 	<div class="container-fluid">
-		<header id="site-header" class="row full">
+		<header id="site-header" class="row">
 				<nav class="navbar" id="topNav">
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
@@ -362,24 +362,31 @@
 		</header>
 		
 		<div class="jumbotron" id="page-intro">
-			<h1>Live mapping for real-time fleet tracking</h1>
-			<p>A GPS fleet tracking solution that offers a range of mapping features, such as live, interactive maps, zoom-in capabilities and continuous location data allow you to optimize how you track your fleet in real time.</p>
-		</div>
-		
-		<div class="row full flat">
-			<img src="_images/_maps/hero.jpg" class="img-responsive" />
-		</div>
-		
-		<div class="row full" id="spec">
-			<div class="col-sx-6 col-sm6 col-md-6 col-lg-6">
-				<h6>MAP VIEW IN ACTION</h6>
-				<p>Fleet Director’s Map View option provides a variety of interactive features and location management tools, including live, interactive maps, traffic data, multi-view mapping and on-demand vehicle locates right on the map. This intuitive tab gives you full visibility into vehicle locations and activity—regardless of your fleet size or type. With our user-friendly software and location detection tools, easily eliminate the "Where are my vehicles?" questions.</p>
-
-				<h6>EFFICIENCY WITH DETAILED MAP DATA</h6>
-				<p>Understanding you're driver's route, driving conditions and behavior can greatly assist in providing a safe environment for them. Having detailed mapping data also allows you to see traffic conditions and overall routes to help ensure that your driver gets to the destination on time. This not only keeps productivity levels high but it also keeps customers satisfied.</p>
-
+			<div class="row">
+				<div class="container">
+					<h1>Live mapping for real-time fleet tracking</h1>
+					<p>A GPS fleet tracking solution that offers a range of mapping features, such as live, interactive maps, zoom-in capabilities and continuous location data allow you to optimize how you track your fleet in real time.</p>
+				</div>
 			</div>
-			<div class="col-xs-6 col-md-6 col-lg-6" id="cta-grid">
+		</div>
+		
+		<div class="row flat" id="jumbo-image">
+			<div class="container">
+				<img src="_images/_maps/hero.jpg" class="img-responsive" />
+			</div>
+		</div>
+		
+		<div class="row" id="spec">
+			<div class="container">
+				<div class="col-sx-6 col-sm6 col-md-6 col-lg-6">
+					<h6>MAP VIEW IN ACTION</h6>
+					<p>Fleet Director’s Map View option provides a variety of interactive features and location management tools, including live, interactive maps, traffic data, multi-view mapping and on-demand vehicle locates right on the map. This intuitive tab gives you visibility into vehicle locations and activity—regardless of your fleet size or type. With our user-friendly software and location detection tools, easily eliminate the "Where are my vehicles?" questions.</p>
+	
+					<h6>EFFICIENCY WITH DETAILED MAP DATA</h6>
+					<p>Understanding you're driver's route, driving conditions and behavior can greatly assist in providing a safe environment for them. Having detailed mapping data also allows you to see traffic conditions and overall routes to help ensure that your driver gets to the destination on time. This not only keeps productivity levels high but it also keeps customers satisfied.</p>
+	
+				</div>
+				<div class="col-xs-6 col-md-6 col-lg-6" id="cta-grid">
 				<div class="col-sm-6 col-md-6 box1 no-gutter margin-bottom-10">
 					<img src="_images/_maps/grid1.jpg" class="img-responsive">
 					<h4 class="row-sub-title"><a href="#">Keep your drivers safe<span class="glyphicon glyphicon-triangle-right green-arrow"></span></a></h4>
@@ -401,9 +408,10 @@
 					<p class="row-p-1 box3">With comprehensive safety analytics</p>
 				</div>
 			</div>
+			</div>
 		</div>
 		
-		<div class="row full bg-lgrey" id="knowledge-base">
+		<div class="row bg-lgrey" id="knowledge-base">
 			<div id="body-content" class="container">
 			<!-- THE KNOWLEDGE BASE -->
 			<div class="row no-gutter flex-row bg-ltgrey">
@@ -436,8 +444,9 @@
 		</div>
 		</div>
 		
-	  <div class="row full">
-			<div class="type-d flex-row">
+	  <div class="row">
+			<div class="container">
+				<div class="type-d flex-row">
                 <div class="type-d-title col-md-12">
                     <h2>EXPLORE THE BENEFITS OF GPS FLEET TRACKING</h2>
                 </div>
@@ -478,9 +487,10 @@
                     </div>
                 </div>
             </div>
+			</div>
 	  </div>
 		
-		<footer id="page-footer" class="row full bg-dgrey arrow-before parallax">
+		<footer id="page-footer" class="bg-dgrey arrow-before parallax">
 			<div class="flex-wrapper">
 				<div class="cta col-xs-12 visible-xs visible-sm">
 					<h3>Sign up for the latest fleet news and GPS trends</h3>
@@ -558,15 +568,17 @@
 				</div>
 			</div>
 			<nav id="policy-nav">
-				<ul>
-					<li class="copyright">&copy; 2015 Teletrac Inc.</li>
-					<li><a href="#">Privacy</a></li>
-					<li><a href="#">Website Terms</a></li>
-					<li><a href="#">Terms of Service</a></li>
-					<li><a href="#">Compliance</a></li>
-					<li><a href="#">Site Map</a></li>
-				</ul>
-				<a href="tel:1-800-TELETRAC" class="number hidden-xs hidden-sm">1-800-TELETRAC</a>
+				<div class="container">
+					<ul>
+						<li class="copyright">&copy; 2015 Teletrac Inc.</li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Website Terms</a></li>
+						<li><a href="#">Terms of Service</a></li>
+						<li><a href="#">Compliance</a></li>
+						<li><a href="#">Site Map</a></li>
+					</ul>
+					<a href="tel:1-800-TELETRAC" class="number hidden-xs hidden-sm">1-800-TELETRAC</a>
+				</div>
 			</nav>
 		</footer>
 	</div>
@@ -574,6 +586,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="_scripts/_js/bootstrap.min.js"></script>
 	<script src="_scripts/_js/wayoutmenu.js"></script>
+	<!--<script type="text/javascript" src="http://fast.fonts.net/jsapi/70d31954-25cd-42fc-8717-fb5d95345c81.js"></script>-->
 	<script src="_scripts/_js/jquery.slicknav.min.js"></script>
 	<script src="_scripts/_js/jquery.parallax-1.1.3.js"></script>
 	<script src="_scripts/_js/main.js"></script>
