@@ -59,7 +59,7 @@ button, a, .badge, select {
 	max-width: 1366px;
 	margin: 0 auto;
 }
-*:not('.hero') .row:not(.flat) {
+.row:not(.flat) {
 	padding: 2.5em 0;
 }
 .row.full {
