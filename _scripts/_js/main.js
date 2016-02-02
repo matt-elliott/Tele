@@ -12,7 +12,7 @@ $(document).ready( function() {
 			$('#mobileNav #menu2').remove();
 		},
 		beforeOpen: function() {
-			var top = $('#topNav')[0].offsetHeight;
+			var top = $('#site-header')[0].offsetHeight;
 			$('.slicknav_nav').css({ 'top' : top });
 			//lock scroll
 			$('body').css({ 'overflow' : 'hidden', 'height' : '100%' });

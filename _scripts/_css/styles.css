@@ -459,10 +459,22 @@ figure.image-grid figcaption {
 	padding: 4em 15% 0;
 }*/
 
+#spec #cta-grid {
+	text-align: justify;
+}
+#spec #cta-grid:after {
+	display: inline-block;
+	content: ' ';
+	width: 100%;
+}
 #spec #cta-grid > div {
 	margin: 0;
     padding: 0;
     max-width: 290px;
+	float: none;
+    display: inline-block;
+    max-width: 48%;
+	text-align: left;
 }
 /* SPEC [END] */
 
@@ -828,6 +840,7 @@ header#site-header .cta button[type='submit'] {
 #brag .sponsors > div {
 	margin-bottom: 5%;
 	padding-left: 0;
+	padding-right: 1em;
 	max-width: 20%;
 }
 /*
@@ -1024,7 +1037,7 @@ header#site-header .cta button[type='submit'] {
 @media (max-width: 1215px) { 
 	.container {width: 100%; padding: 0}
 	.row {margin-right: 0px; margin-left: 0px;}
-	.box1{width:31.33%; margin-right:3%;}
+	*:not('#cta-grid') .box1{width:31.33%; margin-right:3%;}
 }
 /* END Desktop 961px - 1367px width*/
 
@@ -1036,7 +1049,7 @@ header#site-header .cta button[type='submit'] {
 	.row {margin-right: 0px; margin-left: 0px;}
 	.row:first-child .box1 {width:100%; max-width: 100%; margin-right:3%;}
 	.box1 img { float: left;padding-right: 20px;}
-	.box1 {max-height: 191px;}
+	*:not('#cta-grid') .box1 {max-height: 191px;}
 	.row-sub-title, .row-sub-title a { margin-top: 0px;}
 	.row:nth-child(2) .box1, .row:nth-child(3) .box1 {float: left;}
 	.row:nth-child(2) .box1 img {padding-right: 10px;padding-bottom: 30px;}
@@ -1058,6 +1071,7 @@ header#site-header .cta button[type='submit'] {
 	.row:nth-child(2) .box1 {margin-bottom: 10px !important;}
 	.row:nth-child(2) .box1 img {padding-bottom: 10px;}
 	.row:nth-child(3) .box1 .green-arrow { display: inline;}
+	.box1{width:100%; margin-right:3%;}
 
 }
 /* END Mobile <= 960px width*/
